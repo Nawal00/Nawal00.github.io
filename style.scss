@@ -93,7 +93,7 @@ div.flex {
 //----TECHNOLOGIES ICONs SECTION------
 
 #particles-js {
-  height: 100vh;
+  height: 500px;
   background: black;
   display: flex;
   justify-content: center;
@@ -102,19 +102,41 @@ div.flex {
 .tech-col {
   position: absolute;
   text-align: center;
+  width: 60%;
   color: white;
   .tech-icons {
-    padding: 100px 50px;
-    text-align: center;
     font-size: 70px;
+    i{
+      padding: 0 10px;
+    }
   }
   h3{
     text-transform: uppercase;
     text-align: center;
-    font-size: 1.5rem;
+    padding-bottom: 90px;
+    font-size: 25px;
   }
 }
 
+//-----PORTFOLIO SECTION ------
+
+.portfolio-col {
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  padding: 2rem;
+}
+
+.prot-flex{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.prot-2-flex{
+  display: flex;
+}
 //---------NAV BAR --------
 .navbar {
   font-size: 18px;
@@ -185,13 +207,26 @@ div.flex {
   .navbar-toggle {
     display: none;
   }
+
 }
 
+@media screen and (max-width: 768px) and (min-width: 375px) {
+  // .tech-col {
+  //   width: 100%;
+  // }
+
+  // #particles-js {
+  //   height: 850px;
+  // }
+
+
+}
 //----- MOBILE SCREEN ------
-@media screen and (max-width: 375px) {
-
-.about-me{
-  flex-direction: row;
-  }
-
-}
+// @media screen and (max-width: 375px) {
+//   #particles-js {
+//     height: 850px;
+//   }
+//
+//
+//
+// }
