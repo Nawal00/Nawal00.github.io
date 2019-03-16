@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -155,13 +156,22 @@ div.flex {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  .contact{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    i{
+      font-size: 1.5rem;
+    }
+  }
+  >h3{
+    text-align: center;
+    padding-top: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
 }
 
-.contact{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
 
 .contact div{
   display: flex;
@@ -170,7 +180,8 @@ div.flex {
   width: 20%;
   margin: 1.5em;
   height: 110px;
-  background: yellow;
+  color: #FFFFFF;
+  background: rgba(black, 0.5);
 }
 
 
