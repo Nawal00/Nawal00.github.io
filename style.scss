@@ -7,13 +7,22 @@
 
 body {
   font-size: 15px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Tajawal', sans-serif;
+
 }
+
+h3.title{
+  letter-spacing: 0.1em;
+  font-size: 25px;
+}
+
+
 
 //-----HEADER SECTION -------
 #header {
   height: 100vh;
   background-image: url('/images/background.jpg');
+  font-family: 'Source Sans Pro', sans-serif;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -55,7 +64,7 @@ div.flex {
 
 .col-1{
   padding: 10px;
-  width: 70%;
+  width: 50%;
   display:flex;
   flex-direction: column;
   text-align: center;
@@ -63,10 +72,9 @@ div.flex {
   justify-content: center;
   h3{
     padding-bottom: 10px;
-    font-size: 2.5rem;
   }
   p{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 30px;
   }
 }
@@ -76,7 +84,7 @@ div.flex {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 40%;
   .circle{
     width: 6em;
     height: 6em;
@@ -121,12 +129,30 @@ div.flex {
 
 //-----PORTFOLIO SECTION ------
 
+#portfolio{
+  background: linear-gradient(150deg, #FFFFFF 67%, #F2F2F2 60%);
+  background: linear-gradient(150deg, #FFFFFF 67%, #F2F2F2 60%);
+}
+
+h4.space{
+  font-family: 'Press Start 2P', cursive;
+  padding-bottom: 20px;
+}
 
 .portfolio-col {
   display: flex;
   justify-content: center;
   padding: 0 3.5rem;
-  height: 400px;
+  height: 500px;
+  line-height: 1.6;
+  h3{
+    padding-bottom: 10px;
+    font-weight: 800;
+  }
+}
+
+div.img-flex img{
+  border-radius: 5px;
 }
 
 .my-project{
@@ -134,19 +160,48 @@ div.flex {
   justify-content: center;
   margin: 55px 0;
   text-transform: uppercase;
+
 }
 
 .prot-flex{
   display: flex;
-  padding: 0 3.5rem;
+  padding: 0 0 0 3.5rem;
   flex-direction: column;
+  width: 45%;
+  font-size: 17px;
+  img{
+    width: 150px;
+    padding-bottom: 20px;
+  }
 }
 
 .prot-2-flex{
   display: flex;
-  padding: 0 3.5rem;
-  height: 400px;
+  padding: 0 3.5rem 0 0;
   flex-direction: column;
+  width: 45%;
+  font-size: 17px;
+  img{
+    width: 150px;
+    padding-bottom: 20px;
+  }
+}
+
+button{
+  margin-top: 10px;
+  background: #050304;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #FFCB2F;
+  width: 105px;
+  padding: 8px 2px;
+  a{
+    color:#FFCB2F;
+    text-decoration: none;
+  }
+  &:nth-child(2){
+    margin-left: 10px;
+  }
 }
 
 //----CONTACT INFO SECTION -----
