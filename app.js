@@ -9,4 +9,13 @@ $(() => {
 
   $navBarToggle.on('click', toggleActive)
 
+  $(window).scroll(function(){
+    const wScroll = $(this).scrollTop()
+
+    $('.logoFlex').css({
+      'transform': 'translate(0px, '+ wScroll /5 +'%)'
+    })
+  })
+
+
 })

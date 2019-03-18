@@ -30,12 +30,13 @@ h3.title{
   background-attachment: fixed;
 }
 
-div.flex {
-  display: flex;
+div.logoFlex {
+  position: absolute;
   text-align: center;
   align-items: center;
-  flex-direction: column;
-  margin-top: 15%;
+  // margin-top: 15%;
+  top: 40%;
+  left:30%;
   color: white;
   >h1 {
     text-transform: uppercase;
@@ -130,8 +131,8 @@ div.flex {
 //-----PORTFOLIO SECTION ------
 
 #portfolio{
-  background: linear-gradient(150deg, #FFFFFF 67%, #F2F2F2 60%);
-  background: linear-gradient(150deg, #FFFFFF 67%, #F2F2F2 60%);
+  background: linear-gradient(160deg, #FFFFFF 65%, #F2F2F2 55%);
+  margin-bottom: 200px;
 }
 
 h4.space{
@@ -145,6 +146,7 @@ h4.space{
   padding: 0 3.5rem;
   height: 500px;
   line-height: 1.6;
+
   h3{
     padding-bottom: 10px;
     font-weight: 800;
@@ -158,7 +160,7 @@ div.img-flex img{
 .my-project{
   display: flex;
   justify-content: center;
-  margin: 55px 0;
+  padding: 55px 0;
   text-transform: uppercase;
 
 }
@@ -207,10 +209,11 @@ button{
 //----CONTACT INFO SECTION -----
 .contact-info{
   height: 200px;
-  background-image: url('/images/background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  position: fixed;
+  bottom:0;
+  background: black;
+  width:100%;
+  z-index: -1;
   .contact{
     display: flex;
     justify-content: center;
