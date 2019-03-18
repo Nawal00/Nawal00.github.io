@@ -247,12 +247,17 @@ button{
 .navbar {
   font-size: 18px;
   padding-bottom: 10px;
+  position: fixed;
+  width: 100%;
+  transition: .5s;
   .nav-links, .logo {
     text-decoration: none;
     color: rgb(255, 255, 255);
     display: inline-block;
     font-size: 1.2rem;
     padding: 1rem;
+    transition: .5s;
+    text-transform: uppercase;
   }
 }
 
@@ -287,6 +292,13 @@ button{
 
 .active {
   display: block;
+}
+
+nav.black{
+  background: #222222;
+  position: fixed;
+  width: 100%;
+  padding: 10px 50px;
 }
 
 //----TABLET SCREEN-----
