@@ -9,21 +9,27 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Source+Sans+Pro|Tajawal" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,800|Press+Start+2P|Source+Sans+Pro:400,600|Tajawal" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <script src="app.js"></script>
   </head>
   <body>
 
-    <header id="header">
+    <section id="header">
       <nav class="navbar">
         <span class="navbar-toggle" id="js-navbar-toggle">
             <i class="fas fa-bars"></i>
         </span>
-        <a href="#" class="logo">Nawal</a>
+        <a href="#" class="logo">N<span>G</span></a>
         <ul class="main-nav" id="js-menu">
-            <li> <a href="#about-me" class="nav-links">About Me</a> </li>
-            <li> <a href="#contact" class="nav-links">Contact</a> </li>
+            <li> <a href="#about" class="nav-links">About Me</a> </li>
+            <li> <a href="#technology" class="nav-links">Technology</a> </li>
             <li> <a href="#portfolio" class="nav-links">Portfolio</a> </li>
+            <li> <a href="#contact-me" class="nav-links">Contact</a> </li>
         </ul>
       </nav>
 
@@ -34,56 +40,64 @@
           <i class="icon fa fa-chevron-down" aria-hidden="true"></i>
         </a>
       </div>
-    </header>
+    </section>
 
 
-    <section class="about-me">
+    <section id="about">
+      <div class="about-me">
       <div class="circle-div">
         <h2 class="circle">About Me</h2>
       </div>
 
       <div class="col-1">
         <h3 class="title">Who am I ?</h3>
-        <p>
+        <p data-aos="fade-up">
           I'm just a super curious guy who loves to see imagination and ideas come to life.
 
           Though, my career in HR & Recruitment has been successfull, I am a huge tech enthusiast and my obbession for Technologies never went away.
         </p>
-        <p>
+        <p data-aos="fade-up">
           I wanted to learn Web Development so I can utilise my knowledge and creativity into designing and building a product that would help make a difference. To this end, I studied the 'Immersive Web Developer' course with GA. I would love to establish myself in a role where technical web development and creative working is combined, to create interactive web applications.
         </p>
       </div>
+    </div>
   	</section>
 
-    <div id="particles-js">
-      <div class="tech-col">
-        <h3 class="title"> What I've worked with </h3>
-        <div class="tech-icons">
-          <i class="devicon-javascript-plain colored"></i>
-          <i class="devicon-html5-plain-wordmark colored"></i>
-          <i class="devicon-css3-plain-wordmark colored"></i>
-          <i class="devicon-sass-original colored"></i>
-          <i class="devicon-react-original-wordmark colored"></i>
-          <i class="devicon-nodejs-plain-wordmark colored"></i>
-          <i class="devicon-express-original-wordmark"></i>
-          <i class="devicon-bootstrap-plain-wordmark colored"></i>
-          <i class="devicon-babel-plain colored"></i>
-          <i class="devicon-webpack-plain-wordmark colored"></i>
-          <i class="devicon-mongodb-plain-wordmark colored"></i>
-          <i class="devicon-git-plain-wordmark colored"></i>
-          <i class="devicon-github-plain-wordmark"></i>
-          <i class="devicon-heroku-original colored"></i>
-          <i class="devicon-postgresql-plain-wordmark colored"></i>
-          <i class="devicon-jquery-plain-wordmark colored"></i>
-          <i class="devicon-python-plain-wordmark colored"></i>
-          <i class="devicon-atom-original-wordmark"></i>
+    <section id="technology">
+
+      <div id="particles-js">
+        <div class="tech-col">
+          <h3 class="title"> What I've worked with </h3>
+          <div data-aos="fade-zoom-in"
+               data-aos-easing="ease-in-back"
+               data-aos-offset="0"
+               class="tech-icons">
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-html5-plain-wordmark colored"></i>
+            <i class="devicon-css3-plain-wordmark colored"></i>
+            <i class="devicon-sass-original colored"></i>
+            <i class="devicon-react-original-wordmark colored"></i>
+            <i class="devicon-nodejs-plain-wordmark colored"></i>
+            <i class="devicon-express-original-wordmark"></i>
+            <i class="devicon-bootstrap-plain-wordmark colored"></i>
+            <i class="devicon-babel-plain colored"></i>
+            <i class="devicon-webpack-plain-wordmark colored"></i>
+            <i class="devicon-mongodb-plain-wordmark colored"></i>
+            <i class="devicon-git-plain-wordmark colored"></i>
+            <i class="devicon-github-plain-wordmark"></i>
+            <i class="devicon-heroku-original colored"></i>
+            <i class="devicon-postgresql-plain-wordmark colored"></i>
+            <i class="devicon-jquery-plain-wordmark colored"></i>
+            <i class="devicon-python-plain-wordmark colored"></i>
+            <i class="devicon-atom-original-wordmark"></i>
+          </div>
         </div>
       </div>
-    </div>
+  </section>
 
     <section id="portfolio">
 
-      <h3 class="my-project title"> My Projects </h3>
+      <h3 class="my-project title" data-aos="fade-down"> My Projects </h3>
       <div class="portfolio-col">
         <div class="img-flex">
           <img
@@ -138,32 +152,46 @@
 
     </section>
 
-    <footer class="contact-info">
-      <h3 class="title"> Contact Me </h3>
-      <div class="contact">
+    <section id="contact-me">
+      <footer class="contact-info">
+        <h3 class="title"> Contact Me </h3>
+        <div
+          class="contact"
+          data-aos="fade-up"
+          data-aos-duration="7000">
 
-        <div>
-          <i class="far fa-envelope"></i> <h3> Email </h3>
-          <p> nawalgurung80@gmail.com </p>
-        </div>
-        <div>
-          <i class="fab fa-github"></i> <h3> Github </h3>
-          <p>Nawal00</p>
-        </div>
-        <div>
-          <i class="fab fa-linkedin"></i> <h3> LinkedIn </h3>
-          <p>Nawal Gurung</p>
-        </div>
+            <div>
+              <a href="mailto: nawalgurung80@gmail.com">
+                <i class="far fa-envelope"></i> <h3> Email </h3>
+              </a>
+            </div>
 
+            <div>
+              <a href="https://github.com/Nawal00" target="_blank">
+                <i class="fab fa-github"></i> <h3> Github </h3>
+              </a>
+            </div>
 
-      </div>
-    </footer>
+            <div>
+              <a href="https://www.linkedin.com/in/nawal-gurung/" target="_blank">
+                <i class="fab fa-linkedin"></i> <h3> LinkedIn </h3>
+              </a>
+            </div>
+
+        </div>
+      </footer>
+    </section>
 
     <script>
       particlesJS.load('particles-js', 'particles.json', function(){
         console.log('particles.json loaded...')
       })
     </script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      })
+    </script>
   </body>
 </html>

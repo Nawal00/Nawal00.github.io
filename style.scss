@@ -13,7 +13,8 @@ body {
 
 h3.title{
   letter-spacing: 0.1em;
-  font-size: 25px;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -22,7 +23,6 @@ h3.title{
 #header {
   height: 100vh;
   background-image: url('/images/background.jpg');
-  font-family: 'Source Sans Pro', sans-serif;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -34,7 +34,7 @@ div.logoFlex {
   position: absolute;
   text-align: center;
   align-items: center;
-  // margin-top: 15%;
+  font-family: 'Source Sans Pro', sans-serif;
   top: 40%;
   left:30%;
   color: white;
@@ -75,7 +75,7 @@ div.logoFlex {
     padding-bottom: 10px;
   }
   p{
-    font-size: 1.2rem;
+    font-size: 17px;
     line-height: 30px;
   }
 }
@@ -96,7 +96,7 @@ div.logoFlex {
     border: 1px solid white;
   }
   h2{
-    color: white;
+    color: #FFCB2F;
   }
 }
 
@@ -121,7 +121,7 @@ div.logoFlex {
     }
   }
   h3{
-    text-transform: uppercase;
+    // text-transform: uppercase;
     text-align: center;
     padding-bottom: 70px;
     font-size: 25px;
@@ -132,7 +132,7 @@ div.logoFlex {
 
 #portfolio{
   background: linear-gradient(160deg, #FFFFFF 65%, #F2F2F2 55%);
-  margin-bottom: 200px;
+  margin-bottom: 350px;
 }
 
 h4.space{
@@ -143,13 +143,13 @@ h4.space{
 .portfolio-col {
   display: flex;
   justify-content: center;
-  padding: 0 3.5rem;
+  padding:  3.5rem;
   height: 500px;
   line-height: 1.6;
 
   h3{
     padding-bottom: 10px;
-    font-weight: 800;
+
   }
 }
 
@@ -158,10 +158,12 @@ div.img-flex img{
 }
 
 .my-project{
-  display: flex;
-  justify-content: center;
-  padding: 55px 0;
+  text-align: center;
+  padding: 55px 0 0 0;
   text-transform: uppercase;
+  border-bottom: 1px solid #FFCB2F;
+  width:20%;
+  margin: auto;
 
 }
 
@@ -207,57 +209,88 @@ button{
 }
 
 //----CONTACT INFO SECTION -----
-.contact-info{
-  height: 200px;
+footer.contact-info{
+  height: 350px;
   position: fixed;
   bottom:0;
-  background: black;
+  background: #0F0F0F;
   width:100%;
   z-index: -1;
-  .contact{
+  div.contact{
     display: flex;
     justify-content: center;
     text-align: center;
-    i{
-      font-size: 1.5rem;
-    }
   }
   >h3{
     text-align: center;
-    padding-top: 25px;
+    padding-top: 45px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #FFCB2F;
+    font-weight: bold;
+    border-bottom: 1px solid #FFCB2F;
+    width:20%;
+    margin: 15px auto;
   }
 }
 
 
-.contact div{
+div.contact div{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 20%;
-  margin: 1.5em;
+  background: #0A0A0C;
+  width: 15%;
+  margin: 2em;
   height: 110px;
-  color: #FFFFFF;
-  background: rgba(black, 0.5);
+  color: #FFCB2F;
+  a{
+    text-decoration: none;
+    line-height: 55px;
+    i{
+      padding: 15px;
+      font-size: 1.6rem;
+      border-radius: 50%;
+      background: #0A0A0C;
+      color: #FFCB2F;
+      transition: all 0.4s ease-in-out;
+      &:hover{
+        color:black;
+        background: #FFCB2F;
+      }
+    }
+    h3{
+      color:#FFFFFF;
+    }
+  }
 }
 
 
 //---------NAV BAR --------
 .navbar {
-  font-size: 18px;
   padding-bottom: 10px;
   position: fixed;
   width: 100%;
-  transition: .5s;
+  transition: .5s ease;
   .nav-links, .logo {
     text-decoration: none;
     color: rgb(255, 255, 255);
     display: inline-block;
     font-size: 1.2rem;
     padding: 1rem;
-    transition: .5s;
+    transition: .5s ease;
     text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .logo{
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 2px;
+    span{
+      font-weight: 200;
+      font-size: 20px;
+    }
   }
 }
 
@@ -290,7 +323,7 @@ button{
   font-size: 24px;
 }
 
-.active {
+.burgerActive {
   display: block;
 }
 
@@ -299,6 +332,18 @@ nav.black{
   position: fixed;
   width: 100%;
   padding: 10px 50px;
+  z-index: 1;
+  .logo span{
+    color: #FFCB2F;
+  }
+  a.active{
+    color: #FFCB2F;
+  }
+  a.active::after {
+    border-bottom: 2px solid #FFCB2F;
+    width:70%;
+    margin: auto;
+  }
 }
 
 //----TABLET SCREEN-----
