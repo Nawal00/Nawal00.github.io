@@ -22,29 +22,32 @@ h3.title{
 //-----HEADER SECTION -------
 #header {
   height: 100vh;
-  background-image: url('/images/background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  background-attachment: fixed;
+  // background: linear-gradient(-20deg, black, 65%, #FFCB2F 55%);
+  background: linear-gradient(120deg, black, 65%, #FFCB2F 55%);
+
+  // background-image: url('/images/background2.jpg');
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // position: relative;
+  // background-attachment: fixed;
+  // background-size: cover;
 }
 
 div.logoFlex {
   position: absolute;
   text-align: center;
   align-items: center;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Poppins', sans-serif;
   top: 40%;
-  left:30%;
-  color: white;
+  left:8%;
+  color: #FFCB2F;
   >h1 {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-size: 3.5rem;
     padding: 1.5rem;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #FFCB2F;
   }
   >h2 {
     text-transform: uppercase;
@@ -55,6 +58,10 @@ div.logoFlex {
 }
 
 //----ABOUT ME SECTION -------
+#about{
+  z-index: -1;
+
+}
 .about-me{
   height: 100vh;
   background: white;
@@ -131,8 +138,9 @@ div.logoFlex {
 //-----PORTFOLIO SECTION ------
 
 #portfolio{
-  background: linear-gradient(160deg, #FFFFFF 65%, #F2F2F2 55%);
+  background: linear-gradient(160deg, black, 65%, #FFCB2F 55%);
   margin-bottom: 350px;
+  color: white;
 }
 
 h4.space{
@@ -258,8 +266,12 @@ div.contact div{
         background: #FFCB2F;
       }
     }
-    h3{
-      color:#FFFFFF;
+    h4{
+      text-transform: uppercase;
+      font-family: 'Poppins', sans-serif;
+      color: #FFFFFF;
+      font-weight: 400;
+      letter-spacing: 1.5px;
     }
   }
 }
