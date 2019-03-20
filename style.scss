@@ -6,7 +6,6 @@
 }
 
 body {
-  font-size: 15px;
   font-family: 'Tajawal', sans-serif;
 
 }
@@ -23,7 +22,6 @@ h3.title{
 //-----HEADER SECTION -------
 #header {
   height: 100vh;
-  // background: linear-gradient(-20deg, black, 65%, #f7ba13 55%);
   background: linear-gradient(120deg, black, 65%, #f7ba13 55%);
   position: relative;
 
@@ -71,16 +69,18 @@ div.logoFlex {
   text-align: center;
   align-items: center;
   justify-content: center;
+  font-size: 17px;
+  line-height: 30px;
   h3{
     color: #f7ba13;
     border-bottom: 1px solid #f7ba13;
   }
-  p{
+  p:first-of-type {
     padding: 50px 0 0 0;
-    font-size: 17px;
-    line-height: 30px;
   }
-
+  p:nth-child(3) {
+    padding-top: 20px;
+  }
 }
 
 //----CRICLE-----
@@ -139,10 +139,10 @@ div.logoFlex {
   color: white;
 }
 
-span.space{
+h3.space{
   font-family: 'Press Start 2P', cursive;
   padding-bottom: 0px;
-  font-size: 10px;
+  font-size: 15px;
 }
 
 .portfolio-col {
@@ -150,6 +150,7 @@ span.space{
   justify-content: center;
   height: 500px;
   line-height: 1.6;
+  padding-top: 25px;
   h3{
     padding-bottom: 10px;
   }
@@ -181,6 +182,9 @@ div.project{
   img{
     width: 150px;
   }
+  p:nth-child(2){
+    padding-bottom: 10px;
+  }
 }
 
 .prot-2-flex{
@@ -192,6 +196,9 @@ div.project{
   img{
     width: 150px;
     padding-bottom: 20px;
+  }
+  p:nth-child(2){
+    padding-bottom: 10px;
   }
 }
 
