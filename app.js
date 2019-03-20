@@ -11,16 +11,17 @@ $(() => {
   $navBarToggle.on('click', toggleActive)
 
   // nav bar fixed on scroll
-  $(window).scroll(function(){
+  $(window).scroll( () => {
     const wScroll = $(this).scrollTop()
 
     $('.logoFlex').css({
-      'transform': 'translate(0px, '+ wScroll /5 +'%)'
+      'transform': 'translate(0px, '+ wScroll /7 +'%)'
     })
     console.log(wScroll)
   })
 
-  $(window).scroll(function(){
+  // add black class when user scroll down
+  $(window).scroll(() =>{
     const wScroll = $(this).scrollTop()
 
     if (wScroll >= 135){
@@ -54,7 +55,6 @@ $(() => {
         nav.find('a[href="#contact-me"]').addClass('active')
       }
     })
-
   })
 
 
