@@ -15,17 +15,16 @@ h3.title{
   letter-spacing: 0.1em;
   font-size: 30px;
   font-family: 'Poppins', sans-serif;
-  color: #FFCB2F;
+  color: #f7ba13;
   text-transform: uppercase;
 }
-
 
 
 //-----HEADER SECTION -------
 #header {
   height: 100vh;
-  // background: linear-gradient(-20deg, black, 65%, #FFCB2F 55%);
-  background: linear-gradient(120deg, black, 65%, #FFCB2F 55%);
+  // background: linear-gradient(-20deg, black, 65%, #f7ba13 55%);
+  background: linear-gradient(120deg, black, 65%, #f7ba13 55%);
   position: relative;
 
 }
@@ -37,13 +36,13 @@ div.logoFlex {
   font-family: 'Poppins', sans-serif;
   top: 40%;
   left:8%;
-  color: #FFCB2F;
+  color: #f7ba13;
   >h1 {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-size: 3.5rem;
-    padding: 1.5rem;
-    border-bottom: 1px solid #FFCB2F;
+    padding: 10px;
+    border-bottom: 1px solid #f7ba13;
   }
   >h2 {
     text-transform: uppercase;
@@ -73,8 +72,8 @@ div.logoFlex {
   align-items: center;
   justify-content: center;
   h3{
-    color: #FFCB2F;
-    border-bottom: 1px solid #FFCB2F;
+    color: #f7ba13;
+    border-bottom: 1px solid #f7ba13;
   }
   p{
     padding: 50px 0 0 0;
@@ -128,27 +127,27 @@ div.logoFlex {
   }
   h3{
     text-align: center;
-    border-bottom: 1px solid #FFCB2F;
+    border-bottom: 1px solid #f7ba13;
   }
 }
 
 //-----PORTFOLIO SECTION ------
 
 #portfolio{
-  background: linear-gradient(160deg, black, 65%, #FFCB2F 55%);
+  background: linear-gradient(150deg, black, 70%, #f7ba13 55%);
   margin-bottom: 350px;
   color: white;
 }
 
-h4.space{
+span.space{
   font-family: 'Press Start 2P', cursive;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
+  font-size: 10px;
 }
 
 .portfolio-col {
   display: flex;
   justify-content: center;
-  padding:  3.5rem;
   height: 500px;
   line-height: 1.6;
   h3{
@@ -169,7 +168,7 @@ div.project{
   padding: 80px 0 60px 0;
   h3.my-project{
     text-align: center;
-    border-bottom: 1px solid #FFCB2F;
+    border-bottom: 1px solid #f7ba13;
   }
 }
 
@@ -177,7 +176,7 @@ div.project{
   display: flex;
   padding: 0 0 0 3.5rem;
   flex-direction: column;
-  width: 45%;
+  width: 50%;
   font-size: 17px;
   img{
     width: 150px;
@@ -188,7 +187,7 @@ div.project{
   display: flex;
   padding: 0 3.5rem 0 0;
   flex-direction: column;
-  width: 45%;
+  width: 50%;
   font-size: 17px;
   img{
     width: 150px;
@@ -201,15 +200,24 @@ button{
   background: #050304;
   cursor: pointer;
   border-radius: 5px;
-  border: 1px solid #FFCB2F;
+  border: 1px solid #f7ba13;
   width: 105px;
   padding: 8px 2px;
   a{
-    color:#FFCB2F;
+    color:#f7ba13;
     text-decoration: none;
   }
   &:nth-child(2), &:nth-child(3){
     margin-left: 10px;
+  }
+}
+
+div.project-title{
+  span:first-child{
+    font-size: 20px;
+  }
+  span:nth-child(2), span:nth-child(3) {
+    padding-left: 220px;
   }
 }
 
@@ -230,9 +238,9 @@ footer.contact-info{
     text-align: center;
     padding-top: 45px;
     text-transform: uppercase;
-    color: #FFCB2F;
+    color: #f7ba13;
     font-weight: bold;
-    border-bottom: 1px solid #FFCB2F;
+    border-bottom: 1px solid #f7ba13;
     width:20%;
     margin: 15px auto;
   }
@@ -247,7 +255,7 @@ div.contact div{
   width: 15%;
   margin: 2em;
   height: 110px;
-  color: #FFCB2F;
+  color: #f7ba13;
   a{
     text-decoration: none;
     line-height: 55px;
@@ -256,11 +264,11 @@ div.contact div{
       font-size: 1.6rem;
       border-radius: 50%;
       background: #0A0A0C;
-      color: #FFCB2F;
+      color: #f7ba13;
       transition: all 0.4s ease-in-out;
       &:hover{
         color:black;
-        background: #FFCB2F;
+        background: #f7ba13;
       }
     }
     h4{
@@ -343,13 +351,13 @@ nav.black{
   padding: 10px 50px;
   z-index: 1;
   .logo span{
-    color: #FFCB2F;
+    color: #f7ba13;
   }
   a.active{
-    color: #FFCB2F;
+    color: #f7ba13;
   }
   a.active::after {
-    border-bottom: 2px solid #FFCB2F;
+    border-bottom: 2px solid #f7ba13;
     width:70%;
     margin: auto;
   }

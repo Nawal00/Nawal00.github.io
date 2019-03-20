@@ -15,7 +15,7 @@ $(() => {
     const wScroll = $(this).scrollTop()
 
     $('.logoFlex').css({
-      'transform': 'translate(0px, '+ wScroll /7 +'%)'
+      'transform': 'translate(0px, '+ wScroll /5 +'%)'
     })
     console.log(wScroll)
   })
