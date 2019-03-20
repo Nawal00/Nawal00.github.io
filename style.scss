@@ -24,7 +24,6 @@ h3.title{
   height: 100vh;
   background: linear-gradient(120deg, black, 65%, #f7ba13 55%);
   position: relative;
-
 }
 
 div.logoFlex {
@@ -47,6 +46,10 @@ div.logoFlex {
     letter-spacing: 0.2em;
     font-size: 1.5rem;
     padding: 1rem;
+  }
+  i{
+    color: #f7ba13;
+    text-decoration: none;
   }
 }
 
@@ -74,6 +77,7 @@ div.logoFlex {
   h3{
     color: #f7ba13;
     border-bottom: 1px solid #f7ba13;
+    padding-bottom: 7px;
   }
   p:first-of-type {
     padding: 50px 0 0 0;
@@ -365,7 +369,7 @@ nav.black{
   }
   a.active::after {
     border-bottom: 2px solid #f7ba13;
-    width:100%;
+    width:60%;
     margin: auto;
   }
 }
