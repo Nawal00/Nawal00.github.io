@@ -14,7 +14,7 @@ h3.title{
   letter-spacing: 0.1em;
   font-size: 30px;
   font-family: 'Poppins', sans-serif;
-  color: #f7ba13;
+  color: #ffad21;
   text-transform: uppercase;
 }
 
@@ -22,7 +22,7 @@ h3.title{
 //-----HEADER SECTION -------
 #header {
   height: 100vh;
-  background: linear-gradient(120deg, black, 65%, #f7ba13 55%);
+  background: linear-gradient(120deg, black, 65%, #ffad21 55%);
   position: relative;
 }
 
@@ -33,13 +33,13 @@ div.logoFlex {
   font-family: 'Poppins', sans-serif;
   top: 40%;
   left:8%;
-  color: #f7ba13;
+  color: #ffad21;
   >h1 {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-size: 3.5rem;
     padding: 10px;
-    border-bottom: 1px solid #f7ba13;
+    border-bottom: 1px solid #ffad21;
   }
   >h2 {
     text-transform: uppercase;
@@ -48,7 +48,7 @@ div.logoFlex {
     padding: 1rem;
   }
   i{
-    color: #f7ba13;
+    color: #ffad21;
     text-decoration: none;
   }
 }
@@ -75,8 +75,8 @@ div.logoFlex {
   font-size: 17px;
   line-height: 30px;
   h3{
-    color: #f7ba13;
-    border-bottom: 1px solid #f7ba13;
+    color: #ffad21;
+    border-bottom: 1px solid #ffad21;
     padding-bottom: 7px;
   }
   p:first-of-type {
@@ -131,14 +131,14 @@ div.logoFlex {
   }
   h3{
     text-align: center;
-    border-bottom: 1px solid #f7ba13;
+    border-bottom: 1px solid #ffad21;
   }
 }
 
 //-----PORTFOLIO SECTION ------
 
 #portfolio{
-  background: linear-gradient(150deg, black, 70%, #f7ba13 55%);
+  background: linear-gradient(150deg, black, 70%, #ffad21 55%);
   margin-bottom: 350px;
   color: white;
 }
@@ -173,7 +173,7 @@ div.project{
   padding: 80px 0 60px 0;
   h3.my-project{
     text-align: center;
-    border-bottom: 1px solid #f7ba13;
+    border-bottom: 1px solid #ffad21;
   }
 }
 
@@ -211,11 +211,11 @@ button{
   background: #050304;
   cursor: pointer;
   border-radius: 5px;
-  border: 1px solid #f7ba13;
+  border: 1px solid #ffad21;
   width: 105px;
   padding: 8px 2px;
   a{
-    color:#f7ba13;
+    color:#ffad21;
     text-decoration: none;
   }
   &:nth-child(2), &:nth-child(3){
@@ -230,6 +230,14 @@ div.project-title{
   span:nth-child(2), span:nth-child(3) {
     padding-left: 220px;
   }
+}
+
+div.top-arrow {
+  text-align: center;
+  i{
+    color: #ffad21;
+    text-decoration: none;
+    }
 }
 
 //----CONTACT INFO SECTION -----
@@ -249,9 +257,9 @@ footer.contact-info{
     text-align: center;
     padding-top: 45px;
     text-transform: uppercase;
-    color: #f7ba13;
+    color: #ffad21;
     font-weight: bold;
-    border-bottom: 1px solid #f7ba13;
+    border-bottom: 1px solid #ffad21;
     width:20%;
     margin: 15px auto;
   }
@@ -266,7 +274,7 @@ div.contact div{
   width: 15%;
   margin: 2em;
   height: 110px;
-  color: #f7ba13;
+  color: #ffad21;
   a{
     text-decoration: none;
     line-height: 55px;
@@ -275,11 +283,11 @@ div.contact div{
       font-size: 1.6rem;
       border-radius: 50%;
       background: #0A0A0C;
-      color: #f7ba13;
+      color: #ffad21;
       transition: all 0.4s ease-in-out;
       &:hover{
         color:black;
-        background: #f7ba13;
+        background: #ffad21;
       }
     }
     h4{
@@ -345,7 +353,7 @@ div.contact div{
 
 .navbar-toggle {
   position: absolute;
-  top: 10px;
+  top: 22px;
   right: 20px;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.8);
@@ -363,16 +371,19 @@ nav.black{
   padding: 10px 50px;
   z-index: 1;
   .logo, span{
-    color: #f7ba13;
+    color: #ffad21;
   }
   a.active{
-    color: #f7ba13;
+    color: #ffad21;
   }
   a.active::after {
-    border-bottom: 2px solid #f7ba13;
+    border-bottom: 2px solid #ffad21;
     width:60%;
     margin: auto;
   }
+  // .navbar-toggle {
+  //   padding: 10px 0px;
+  // }
 }
 
 //----TABLET SCREEN-----
@@ -396,29 +407,214 @@ nav.black{
     }
   }
 
-  .navbar-toggle {
+  span.navbar-toggle {
     display: none;
   }
 
 }
 
-@media screen and (max-width: 768px) and (min-width: 375px) {
-  // .tech-col {
-  //   width: 100%;
-  // }
-
-  // #particles-js {
-  //   height: 850px;
-  // }
-
-
-}
-//----- MOBILE SCREEN ------
-// @media screen and (max-width: 375px) {
-//   #particles-js {
-//     height: 850px;
-//   }
-//
+// @media screen and (max-width: 768px) and (min-width: 375px) {
+//   // .tech-col {
+//   //   width: 100%;
+//   // }
+//   //
+//   // #particles-js {
+//   //   height: 850px;
+//   // }
 //
 //
 // }
+// ----- MOBILE SCREEN ------
+@media only screen and (max-width: 768px) {
+  #header {
+    height: 100vh;
+    background: linear-gradient(110deg, black, 85%, #ffad21 55%);
+    position: relative;
+  }
+
+  .about-me{
+    height: 100%;
+    padding: 80px 2px 0 2px;
+    color: #FFFFFF;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .col-1{
+    padding: 0 10px;
+    width: 100%;
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    line-height: 30px;
+    h3{
+      color: #ffad21;
+      border-bottom: 1px solid #ffad21;
+      padding: 20px 0 0 5px;
+    }
+    p:first-of-type {
+      padding: 20px 0 0 0;
+    }
+    p:nth-child(3) {
+      padding-top: 20px;
+    }
+  }
+
+  //----CRICLE-----
+  .circle-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    .circle{
+      width: 15em;
+      height: 15em;
+      border-radius: 50%;
+      background-image: url('/images/headshot.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  #particles-js {
+    height: 100vh;
+    background: black;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.project{
+    display: flex;
+    justify-content: center;
+    padding: 0 0 30px 0;
+    h3.my-project{
+      text-align: center;
+      border-bottom: 1px solid #ffad21;
+    }
+  }
+
+  .tech-col {
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    color: white;
+      i{
+        font-size: 10vh;
+        padding: 0 5px;
+      }
+      h3{
+        padding-top: 90px;
+      }
+    }
+
+  #portfolio{
+    background: linear-gradient(150deg, black, 70%, #ffad21 55%);
+    margin-bottom: 350px;
+    color: white;
+
+  }
+
+  h3.space{
+    font-family: 'Press Start 2P', cursive;
+    padding-bottom: 0;
+    font-size: 15px;
+  }
+
+  .portfolio-col {
+    display: block;
+    height: 950px;
+    line-height: 1.6;
+    padding-top: 25px;
+    h3{
+      padding-bottom: 10px;
+    }
+  }
+
+  div.img-flex img{
+    border-radius: 5px;
+    width: 360px;
+    padding-left: 15px;
+  }
+
+  div.project{
+    text-align: center;
+    h3.my-project{
+      border-bottom: 1px solid #ffad21;
+      padding-top: 80px;
+      margin: 0 0 30px 0;
+      width: 73%;
+    }
+  }
+
+  .prot-flex{
+    display: block;
+    width: 100%;
+    font-size: 17px;
+    padding: 0 15px;
+    p:nth-child(2){
+      padding-bottom: 10px;
+    }
+  }
+
+  .prot-2-flex{
+    display: block;
+    padding: 0;
+    padding: 0 15px;
+    width: 100%;
+    p:nth-child(2){
+      padding-bottom: 10px;
+    }
+  }
+
+  div.img-mobile{
+    padding-top: 30px;
+  }
+
+  footer.contact-info{
+    height: 350px;
+    position: fixed;
+    bottom:0;
+    background: #0F0F0F;
+    width:100%;
+    z-index: -1;
+    div.contact{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+    >h3{
+      width:63%;
+    }
+  }
+
+
+  div.contact div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #0A0A0C;
+    width: 100%;
+    margin: 2em;
+    height: 110px;
+    color: #ffad21;
+  }
+
+  nav.black {
+    padding: 0px 10px;
+
+  }
+
+  div.logoFlex {
+    width: 85%;
+  }
+
+}

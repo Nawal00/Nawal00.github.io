@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,800|Press+Start+2P|Source+Sans+Pro:400,600|Tajawal" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
@@ -26,7 +27,7 @@
         </span>
         <a href="#" class="logo">N<span>G</span></a>
         <ul class="main-nav" id="js-menu">
-            <li> <a href="#about" class="nav-links">About Me</a> </li>
+            <li> <a href="#about" class="nav-links">About</a> </li>
             <li> <a href="#technology" class="nav-links">Technology</a> </li>
             <li> <a href="#portfolio" class="nav-links">Portfolio</a> </li>
             <li> <a href="#contact-me" class="nav-links">Contact</a> </li>
@@ -36,9 +37,11 @@
       <div class="logoFlex">
         <h1> Nawal Gurung </h1>
         <h2> Web Developer </h2>
-        <a class="down" href="#about">
+        <div class="animated bounce-down infinite">
+        <a href="#contact-me">
           <i class="icon fa fa-chevron-down" aria-hidden="true"></i>
         </a>
+      </div>
       </div>
     </section>
 
@@ -184,9 +187,7 @@
           </div>
         </div>
 
-        <div class="img-flex"
-          data-aos="fade-up"
-        >
+        <div class="img-flex img-mobile" data-aos="fade-up">
           <img
             class="gif"
             src="https://media.giphy.com/media/51SNnQ8eVCiUnQYHfv/giphy.gif"
@@ -228,27 +229,26 @@
     </div>
 
     <div class="portfolio-col">
-    <div class="prot-2-flex" data-aos="fade-up">
-      <h3> Yelp Camp </h3>
-        <p>
-          A socially engaging app I made during my time studying online Web Development course at Udemey. The project introduced me to Node.js, Express, npm, MongoDB and user authorisation and authentication. Through the course, I’ve managed to build on a good foundation knoweldge of full stack technologies such as HTML5, CSS3, JavaScript, Bootstrap, jQuery, RESTful, Node.js, Express.js, MongoDB, Git, Github and Heroku.
-        </p>
-        <div class="btn-div">
-          <button><a href="https://github.com/Nawal00/" target="_blank">Source code <i class="fas fa-code"></i> </a></button>
-          <button><a href="https://mysterious-coast-80607.herokuapp.com/" target="_blank">See the site <i class="fas fa-link"></i> </a></button>
+      <div class="prot-2-flex" data-aos="fade-up">
+        <h3> Yelp Camp </h3>
+          <p>
+            A socially engaging app I made during my time studying online Web Development course at Udemey. The project introduced me to Node.js, Express, npm, MongoDB and user authorisation and authentication. Through the course, I’ve managed to build on a good foundation knoweldge of full stack technologies such as HTML5, CSS3, JavaScript, Bootstrap, jQuery, RESTful, Node.js, Express.js, MongoDB, Git, Github and Heroku.
+          </p>
+          <div class="btn-div">
+            <button><a href="https://github.com/Nawal00/" target="_blank">Source code <i class="fas fa-code"></i> </a></button>
+            <button><a href="https://mysterious-coast-80607.herokuapp.com/" target="_blank">See the site <i class="fas fa-link"></i> </a></button>
+          </div>
+        </div>
+
+        <div class="img-flex img-mobile">
+          <img
+            class="gif"
+            src="https://media.giphy.com/media/9ruQ3TxzlXGUzPO924/giphy.gif"
+            alt="Yelp Camp"
+            data-aos="fade-up"
+          >
         </div>
       </div>
-
-      <div class="img-flex">
-        <img
-          class="gif"
-          src="https://media.giphy.com/media/9ruQ3TxzlXGUzPO924/giphy.gif"
-          alt="Yelp Camp"
-          data-aos="fade-up"
-        >
-      </div>
-      <a href="#top"> <i class="fas fa-chevron-up"></i></a>
-  </div>
     </section>
 
     <section id="contact-me">
@@ -277,6 +277,11 @@
               </a>
             </div>
 
+        </div>
+        <div class="top-arrow">
+          <a href="#top">
+            <i class="fas fa-chevron-up"></i>
+          </a>
         </div>
       </footer>
     </section>
