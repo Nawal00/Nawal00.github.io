@@ -14,9 +14,15 @@ $(() => {
   $(window).scroll( () => {
     const wScroll = $(this).scrollTop()
 
-    $('.logoFlex').css({
-      'transform': 'translate(0px, '+ wScroll /5 +'%)'
-    })
+    if($(window).width() <= 768){
+      $('.logoFlex').css({
+        'transform': 'translate(0px, '+ wScroll /15 +'%)'
+      })
+    }else {
+      $('.logoFlex').css({
+        'transform': 'translate(0px, '+ wScroll /4.6 +'%)'
+      })
+    }
     console.log(wScroll)
   })
 
