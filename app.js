@@ -20,7 +20,7 @@ $(() => {
       })
     }else {
       $('.logoFlex').css({
-        'transform': 'translate(0px, '+ wScroll /4.6 +'%)'
+        'transform': 'translate(0px, '+ wScroll /5.5 +'%)'
       })
     }
     console.log(wScroll)
@@ -63,5 +63,19 @@ $(() => {
     })
   })
 
+  // Wrap every letter in a span
+  $('.ml14 .letters').each(function(){
+    $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letters'>$&</span>"))
+  })
 
+  anime.timeline({loop: false})
+    .add({
+      targets: '.ml14 .letters',
+      opacity: [0.2,1],
+      easing: 'easeOutExpo',
+      duration: 2000,
+      delay: function(el, i) {
+        return  85 * i
+      }
+    })
 })
